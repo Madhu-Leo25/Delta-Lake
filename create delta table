@@ -1,0 +1,7 @@
+from delta.tables import DeltaTable
+
+DeltaTable.createIfNotExists(spark) \
+      .tableName("delta_lake_madhu.default.firstdeltaapi") \
+      .addColumn("id","INT") \
+      .addColumn("salary", "INT") \
+      .execute()
