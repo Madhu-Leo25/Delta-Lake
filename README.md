@@ -1,1 +1,13 @@
 # Delta-Lake
+
+Data lake 
+1.No acid transactions 
+2.hard to handle schema changes
+3.no easy way to track changes/ rollback to earlier version
+
+Why Delta Lake?
+Acid transactions
+Schema enforcement and evolution
+Timetravel
+Unified batch + streaming
+Data lineage + audit
