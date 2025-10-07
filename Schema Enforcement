@@ -1,0 +1,13 @@
+Schema Enforcement
+
+Data = [(1,100,"aa",1),(2,200,"bb",1),(3,300,"cc",1),(4,400,"dd",1)]
+
+df = spark.createDataFrame(Data ,['id','salary','name','sus_column'])
+
+display(df)
+
+
+
+df.write.format("delta")\
+         .mode("append")\
+         .save("/Volumes/delta_lake_madhu/default/deltavol/demosink/")

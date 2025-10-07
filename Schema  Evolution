@@ -1,0 +1,4 @@
+df.write.format("delta")\
+         .mode("append")\
+         .option("mergeschema",True)\
+         .save("/Volumes/delta_lake_madhu/default/deltavol/demosink")

@@ -1,0 +1,1 @@
+SELECT * FROM delta_lake_madhu.default.first_table
