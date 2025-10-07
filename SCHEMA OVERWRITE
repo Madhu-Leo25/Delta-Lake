@@ -1,0 +1,5 @@
+Data = [(1,100,"aa",1),(2,200,"bb",1),(3,300,"cc",1),(4,400,"dd",1)]
+
+df = spark.createDataFrame(Data ,['cust_id','income','name','tip'])
+
+display(df)
